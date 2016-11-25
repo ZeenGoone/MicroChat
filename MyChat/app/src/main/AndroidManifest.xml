@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="gruppe22.dtu.dk.mychat">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:name=".ChatApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/mychatlogo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden">>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.ChatController"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden">>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden">>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.ChangeServerPassword"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden">>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.ShareFileChat"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden">>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.UploadFileServer"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden">>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.DeleteFileServer"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden">>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

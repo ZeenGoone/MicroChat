@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/base_login"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    >
+    <!-- Manual Toolbar Initiation -->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Sign In"
+        android:id="@+id/txtSignIn"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="53dp"
+        android:textSize="50sp"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editTextLoginPassword"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="152dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextLoginUsername"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/editTextLoginPassword"
+        android:layout_alignEnd="@+id/editTextLoginPassword"
+        android:layout_alignLeft="@+id/editTextLoginPassword"
+        android:layout_alignStart="@+id/editTextLoginPassword" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Username"
+        android:id="@+id/txtLoginUsername"
+        android:layout_above="@+id/editTextLoginUsername"
+        android:layout_alignLeft="@+id/editTextLoginUsername"
+        android:layout_alignStart="@+id/editTextLoginUsername" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Password"
+        android:id="@+id/txtLoginPassword"
+        android:layout_above="@+id/editTextLoginPassword"
+        android:layout_alignLeft="@+id/editTextLoginPassword"
+        android:layout_alignStart="@+id/editTextLoginPassword" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/btnLogin"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp" />
+</RelativeLayout>

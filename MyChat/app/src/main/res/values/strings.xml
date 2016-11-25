@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">μChat</string>
+    <string name="menu_change_chat_pwd">Set Chat Password</string>
+    <string name="menu_save_file">Save Chat</string>
+    <string name="menu_change_nick">Change Nickname</string>
+    <string name="menu_new_chat">Join Chat</string>
+    <string name="menu_change_pwd">Change Password</string>
+    <string name="menu_refresh">Refresh Chats</string>
+    <string name="menu_logout">Log Out User</string>
+</resources>
